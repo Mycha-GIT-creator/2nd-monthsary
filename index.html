@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Ica 💜</title>
+  <meta name="description" content="A little living bouquet made for Ica.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <audio id="song" src="song.mp3" preload="auto" loop></audio>
+
+  <div class="curtain" id="curtain" role="button" tabindex="0" aria-label="Open">
+    <span class="curtain-hint">tap to open ✦</span>
+  </div>
+
+  <main class="scene">
+    <div class="message">
+      <h1> <span>♡</span></h1>
+      <p class="subtitle" id="subtitle"></p>
+    </div>
+
+    <div class="bouquet-stage">
+      <section class="bouquet-wrap" aria-label="Animated flower bouquet">
+        <div class="bloom" aria-hidden="true"></div>
+        <div class="sparkles" aria-hidden="true"></div>
+        <div class="petals" aria-hidden="true"></div>
+        <img class="bouquet" src="bouquet.png" alt="A hand-drawn purple tulip bouquet for Ica">
+      </section>
+    </div>
+
+    <button class="love-button" id="loveButton">
+      <span>tap me</span>
+      <span class="heart">♡</span>
+    </button>
+
+    <p class="hint" id="hint">tap anywhere to start the song ✦</p>
+  </main>
+
+  <div class="player" id="player">
+    <button class="play-toggle" id="playToggle" aria-label="Play song">
+      <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+      <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h3v14H8zm5 0h3v14h-3z"/></svg>
+    </button>
+
+    <div class="track">
+      <div class="track-meta">
+        <span class="track-title">Libo-Libong Buwan (Uuwian)</span>
+        <span class="track-artist">Kyle Raphael</span>
+      </div>
+
+      <div class="progress" id="progress" role="slider" tabindex="0"
+           aria-label="Song position" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <div class="times">
+        <span id="currentTime">0:00</span>
+        <span id="totalTime">0:00</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="love-note" id="loveNote">
+    <div class="note-card">
+      <button class="close-note" id="closeNote" aria-label="Close">×</button>
+      <div class="mini-flower">✿</div>
+      <p>
+        If I could give you flowers every day,<br>
+        I'd make sure they always came with<br>
+        a little reminder that you're loved.
+      </p>
+      <div class="signature">— Moi</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
